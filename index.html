@@ -40,6 +40,14 @@
                   <li class="header__translation-item"> <img class="header__translation-img" src="images/header/Line1.svg" alt="Line"></li>
                   <li class="header__translation-item"> <a class="header__translation-link" href="#">RU</a></li>
                 </ul>
+                <div class="header__submenu-mobile">
+                  <div class="header__tel"> 
+                    <div class="header__tel-images"></div>
+                    <div class="header__tel-info"><a class="header__tel-text" href="tel:9998887766">999 888 77 66</a></div>
+                  </div>
+                  <div class="header__button"> <a class="header__btn" href="#">Used Cars </a></div>
+                  <div class="header__button"> <a class="header__btn header__btn-active" href="#">Sell Your Car</a></div>
+                </div>
                 <ul class="header__list">
                   <li class="header__register-item"><a class="header__register-link header__register-active" href="#">Log in</a></li>
                   <li class="header__register-item"><a class="header__register-link" href="#">Registration</a></li>
@@ -59,7 +67,7 @@
                     <div class="header__tel-info"><a class="header__tel-text" href="tel:9998887766">999 888 77 66</a></div>
                   </div>
                   <div class="header__button"> <a class="header__btn" href="#">Used Cars </a></div>
-                  <div class="header__button"> <a class="header__btn header__btn-active" href="#">Sell Your Car</a></div>
+                  <div class="header__button"> <a class="header__btn header__btn-active" href="#">Sell Your Car  </a></div>
                 </div>
               </div>
             </div>
@@ -78,8 +86,27 @@
                   <h1 class="content__title">reliable <br> and favorable conditions</h1>
                 </div>
               </div>
-              <div class="content__item"> 
-                <div class="content__images"> <img class="content__img" src="images/bg.png" alt=""></div>
+              <div class="content__item">
+                <div id="scene"></div>
+                <div class="content__images" data-depth="0.2"><img class="content__img" src="images/bg.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="price"> 
+          <div class="container">
+            <div class="price__inner"> 
+              <div class="price__item"> 
+                <div class="price__images"><img class="price__img" src="images/price/car__buy.png" alt="car__buy"></div>
+              </div>
+              <div class="price__item"> 
+                <div class="price__images"><img class="price__img" src="images/price/car__sell.png" alt="car__sell"></div>
+              </div>
+              <div class="price__item"> 
+                <div class="price__images"><img class="price__img" src="images/price/car__leasing.png" alt="car__leasing"></div>
+              </div>
+              <div class="price__item"> 
+                <div class="price__images"><img class="price__img" src="images/price/car__auction.png" alt="car__auction"></div>
               </div>
             </div>
           </div>
@@ -90,6 +117,7 @@
       </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

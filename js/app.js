@@ -28,8 +28,13 @@ $(document).ready(function () {
       $('.header__menu-burger').click(function () {
         $('.header__menu-burger').toggleClass('menu__open');
         $('.header__menu').toggleClass('menu__open');
+        $('.header__submenu-mobile').toggleClass('menu__open');
         $('.menu__img').toggleClass('menu__img-remove');
       });
     });
+  });
+  var scene = document.getElementById('scene');
+  var parallaxInstance = new Parallax(scene, {
+    relativeInput: true
   });
 });
