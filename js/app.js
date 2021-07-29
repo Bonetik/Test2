@@ -33,4 +33,17 @@ $(document).ready(function () {
       });
     });
   });
+  var bg = document.querySelectorAll('.content__paralacs');
+
+  var _loop = function _loop(i) {
+    window.addEventListener('mousemove', function (e) {
+      var x = e.clientX / window.innerWidth;
+      var y = e.clientY / window.innerHeight;
+      bg[i].style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+    });
+  };
+
+  for (var i = 0; i < bg.length; i++) {
+    _loop(i);
+  }
 });
